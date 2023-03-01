@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div.slide-left {
+    width:100%;
+    overflow:hidden;
+  }
+  div.slide-left p {
+    animation: slide-left 10s;
+  }
+  
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  /************** Buttons ************/
+  .main-btn {
+    @apply inline-block px-8 py-4 font-bold text-white duration-300 bg-blue-700 rounded-full;
+  }
+  .main-btn:hover {
+    @apply bg-blue-400;
+  }
+  
+  .main-btn.shadow-btn {
+    @apply text-blue-600 bg-white;
+  }
+  .main-btn.shadow-btn:hover {
+    @apply bg-white shadow-xl;
+  }
+
+  .gradient-btn {
+    background-image: linear-gradient(to right, #0067f4 0%, #2bdbdc 50%, #0067f4 100%);
+    background-size: 200% auto;
+    overflow: hidden;
+  }
+  .gradient-btn:hover {
+    background-position: right center;
+    @apply shadow-xl;
+  }
