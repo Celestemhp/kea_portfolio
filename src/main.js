@@ -1,12 +1,50 @@
 import "./style.css";
 
-// import { inView, animate } from "motion";
+module.exports = {
+    content: ["./**/*.html"],
+    safelist: ["active"],
+    theme: {
+      fontFamily: {
+        header: ["Raleway", "sans-serif"],
+        body: ["Open Sans", "sans-serif"],
+      },
+  
+      screens: {
+        xs: "375px",
+        ...defaultTheme.screens,
+      },
 
-// const inviewDesktop = () => {
-//   return inView(".viewinsection6", () => {
-//     animate(".section1-element1", { x: [-2000, -200] }, { duration: 2 });
-//     return () => {
-//      animate(".section1-element1", { x: [-2000, -200] }, { duration: 2 });
-//     };
-//   });
-// };
+container: {
+    center: true,
+    padding: "1rem",
+  },
+
+  shadows: {
+    default: "0 2px 18px rgba(0, 0, 0, 0.06)",
+    md: "0 -3px 36px rgba(0, 0, 0, 0.12)",
+  },
+}
+}
+
+    //===== Back to top
+    
+    // Show or hide the sticky footer button
+    $(window).on('scroll', function(event) {
+        if($(this).scrollTop() > 600){
+            $('.back-to-top').fadeIn(200)
+        } else{
+            $('.back-to-top').fadeOut(200)
+        }
+    });
+    
+    
+    //Animate the scroll to yop
+    $('.back-to-top').on('click', function(event) {
+        event.preventDefault();
+        
+        $('html, body').animate({
+            scrollTop: 0,
+        }, 1500);
+    });
+    
+    

@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Celeste Michelle</title>
   </head>
-  <body class="sticky grid h-screen overflow-auto bg-cover bg-fixed bg-center" style="background-image: url(img/gradient_baggrund4.png)">
+  <body
+  :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
+  class="relative sticky grid h-screen overflow-auto bg-cover bg-fixed bg-center"
+  x-data="{ mobileMenu: false }"
+   style="background-image: url(img/gradient_baggrund4.png)">
     <header class="m-5 fixed">
       <h2>celestemichelle.</h2>
     </header>
@@ -29,12 +33,13 @@
 
 
     <section class="">
-      <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row" style="background-color: #FFF2FF;">
+      <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row gap-10" style="background-color: #FFF2FF;">
         <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
           <h3>About me</h3>
-          <p class="prose leading-relaxed text-grey-20 pt-6">Well, as you guessed, my name is Celeste and I´m 23 years old. I´m from Copenhagen but I also have roots on the Faroe Islands. 
-            I´m a junior UX/UI designer, and currently study at Københavns Erhversakademi on 3rd semester. Before I started my study as a graphic designer, I was studying at home in my sparetime and taught myself some of the Adobe programs and learned about what graphic design is.
-            I´m a very creative soul who always is crafting something. I love to paint, draw, do mini prototypes of architecture buidings, read books, or do my wall-decoration art. Oh and of course kryds&tværs - always a winner!</p>
+          <p class="prose leading-relaxed text-grey-20 pt-6">Well, as you may have guessed, my name is Celeste and I´m 23 years old. I´m from Copenhagen but I also have roots on the Faroe Islands. 
+            I´m a junior UX/UI designer, and currently studying multimediadesign at Københavns Erhversakademi on 3rd semester. 
+            <br> Before I started my study as a graphic designer, I was studying at home in my sparetime and taught myself some of the Adobe programs and learned about what graphic design was.
+            I´m a very creative soul who´s always crafting something. I love to paint, draw, do mini prototypes of architecture buidings, read books, or do my wall-decoration art. Oh and of course kryds&tværs, not to forget!</p>
         </div>
         <div class="w-full shadow max-w-sm sm:max-w-xs">
           <img src="img/mig_strand.jpg" alt="Celeste" class="w-full shadow">
@@ -42,11 +47,11 @@
       </div>
     </section>
     <section class="mt-72 mb-72 flex justify-center">
-      <h3 class="text-center">I love to explore and constantly learn new things <br>
-        that´s what drives me everyday!</h3>
+      <h3 class="text-center">"I love to explore and constantly learn new things, <br>
+        that´s what drives me everyday!"</h3>
     </section>
 
-    <section>
+    <section class="portfolio m-5">
     <h3 class="pt-6 text-center font-header text-xl font-semibold sm:text-2xl lg:text-3xl">Portfolio</h3>
     <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
       <div class="group rounded px-8 py-12 shadow hover:bg-primary hover:scale-105 transform transition-all bg-slate-100">
@@ -79,13 +84,13 @@
         <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
           <div class="hidden group-hover:block">
             <img
-              src="/assets/img/icon-content-white.svg"
+              src="/img/04_icon.svg"
               alt="content marketing icon"
             />
           </div>
           <div class="block group-hover:hidden">
             <img
-              src="/assets/img/icon-content-black.svg"
+              src="/img/04_icon.svg"
               alt="content marketing icon"
             />
           </div>
@@ -96,7 +101,7 @@
           >
             Animation
           </h3>
-          <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          <p class="text-grey pt-4 text-sm  md:text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
         </div>
@@ -105,13 +110,13 @@
         <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
           <div class="hidden group-hover:block">
             <img
-              src="/assets/img/icon-mobile-white.svg"
+              src="/img/04_icon.svg"
               alt="Mobile Application icon"
             />
           </div>
           <div class="block group-hover:hidden">
             <img
-              src="/assets/img/icon-mobile-black.svg"
+              src="/img/04_icon.svg"
               alt="Mobile Application icon"
             />
           </div>
@@ -122,7 +127,7 @@
           >
             Redesign website
           </h3>
-          <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          <p class="text-grey pt-4 text-sm  md:text-base">
             Linda Andrews 
           </p>
         </div>
@@ -148,7 +153,7 @@
           >
             Footbag campaign
           </h3>
-          <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          <p class="text-grey pt-4 text-sm md:text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
         </div>
@@ -174,7 +179,7 @@
           >
             Christmas card
           </h3>
-          <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          <p class="text-grey pt-4 text-sm md:text-base">
             Maersk Star Air
           </p>
         </div>
@@ -200,24 +205,34 @@
           >
             Website
           </h3>
-          <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+          <p class="text-grey pt-4 text-sm md:text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
         </div>
       </div>
     </div>
   </section>
-<footer>
+  <div class="m-10 mt-14 flex flex-row justify-end relative">
+    <div>
+      <h3>Thanks for <br> stopping by!</h3>
+    </div>
+    <div class="w-2/12">
+      <img class="max-h-96 w-full object-cover" src="/img/om_icon.svg" alt="illustration">
+    </div>
+  </div>
+<footer class="m-5 pt-5">
   <div class="flex flex-col md:gap-5 sm:gap-1 lg:gap-5">
     <!-- knapper -->
     <ul class="flex flex-wrap justify-center mt-20 md:mt-2">
       <li><a class="mx-3 main-btn gradient-btn">Contact</a></li>
-      <li><a class="mx-3 main-btn shadow-btn" href="https://www.linkedin.com/in/celeste-michelle-holmberg-86a673230/">Download CV<i class="ml-2 lni-play"></i></a></li>
+      <li><a class="mx-3 main-btn shadow-btn" href="">Download CV<i class="ml-2 lni-play"></i></a></li>
     </ul>
     </div>
-    <p>@copyright2023 celestemichelle</p>
+    <p class="text-grey-20 mt-5 text-xs">@celestemichelle2023</p>
 </footer>
   </main>
+      <a class="back-to-top" href="#"><i class="lni-chevron-up"></i></a>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
