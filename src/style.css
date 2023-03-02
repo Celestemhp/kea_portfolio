@@ -7,6 +7,9 @@
     font-family: monospace, system-ui, sans-serif;
   }
 }
+img {
+  width: 100%;
+}
 h1 {
   color: #787878;
   letter-spacing: 3px;
