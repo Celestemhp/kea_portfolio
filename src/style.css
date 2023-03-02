@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: monospace, system-ui, sans-serif;
+  }
+}
+h1 {
+  color: #787878;
+  letter-spacing: 3px;
+  font-size: 24px;
+  font-weight: 600;
+}
+h2 {
+  color: #545454;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  @apply text-gray-700;
+}
+.container {
+  @apply px-5 mx-auto;
+}
+
+.row {
+  @apply flex flex-wrap;
+}
+/********** main **********/
 div.slide-left {
     width:100%;
     overflow:hidden;
@@ -31,14 +60,14 @@ div.slide-left {
   }
   
   .main-btn.shadow-btn {
-    @apply text-blue-600 bg-white;
+    @apply text-indigo-600 bg-white;
   }
   .main-btn.shadow-btn:hover {
     @apply bg-white shadow-xl;
   }
 
   .gradient-btn {
-    background-image: linear-gradient(to right, #0067f4 0%, #2bdbdc 50%, #0067f4 100%);
+    background-image: linear-gradient(to right, #F2C0FF 0%, #2bdbdc 50%, #0067f4 100%);
     background-size: 200% auto;
     overflow: hidden;
   }
