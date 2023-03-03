@@ -115,7 +115,7 @@ p {
     cursor: pointer;
   }
   /************** fade in start ************/
-  /* @media (min-width: 1024px){
+  @media (min-width: 1024px){
 
     .a{
       visibility: hidden;
@@ -151,7 +151,7 @@ p {
       --tw-bg-opacity: 1;
       background-color: rgb(24 28 49 / var(--tw-bg-opacity));
     }
-  } */
+  }
 
   section span {
     display: block;
