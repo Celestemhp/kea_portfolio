@@ -10,6 +10,9 @@
 img {
   width: 100%;
 }
+.group {
+  cursor: pointer;
+}
 h1 {
   color: #787878;
   letter-spacing: 3px;
@@ -65,11 +68,11 @@ p {
   max-width: 1280px;
 }
 
-  div.slide-left {
+  .slide-left {
     width:100%;
     overflow:hidden;
   }
-  div.slide-left p {
+  .slide-left h1 {
     animation: slide-left 10s;
   }
   
@@ -104,13 +107,15 @@ p {
     background-image: linear-gradient(to right, #F2C0FF 0%, #2bdbdc 50%, #0067f4 100%);
     background-size: 200% auto;
     overflow: hidden;
+    cursor: pointer;
   }
   .gradient-btn:hover {
     background-position: right center;
     @apply shadow-xl;
+    cursor: pointer;
   }
   /************** fade in start ************/
-  @media (min-width: 1024px){
+  /* @media (min-width: 1024px){
 
     .a{
       visibility: hidden;
@@ -146,4 +151,10 @@ p {
       --tw-bg-opacity: 1;
       background-color: rgb(24 28 49 / var(--tw-bg-opacity));
     }
+  } */
+
+  section span {
+    display: block;
+    transform: translateX(-100px);
+    opacity: 0;
   }
