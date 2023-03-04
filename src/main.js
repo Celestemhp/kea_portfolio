@@ -1,4 +1,6 @@
 import "./style.css";
+import 'flowbite';
+import { Modal } from 'flowbite';
 
 module.exports = {
     content: ["./**/*.html"],
@@ -66,3 +68,47 @@ Entering: "ease-out duration-300"
 Leaving: "ease-in duration-200"
   From: "opacity-100 translate-y-0 md:scale-100"
   To: "opacity-0 translate-y-4 md:translate-y-0 md:scale-95"
+
+  
+  // show the modal
+modal.show();
+
+// hide the modal
+modal.hide();
+
+// toggle the modal
+modal.toggle();
+
+// true if hidden
+modal.isHidden();
+
+// true if visible
+modal.isVisible();
+
+// set the modal menu element
+const $targetEl = document.getElementById('modalEl');
+
+// options with default values
+const options = {
+  placement: 'bottom-right',
+  backdrop: 'dynamic',
+  backdropClasses: 'bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40',
+  closable: true,
+  onHide: () => {
+      console.log('modal is hidden');
+  },
+  onShow: () => {
+      console.log('modal is shown');
+  },
+  onToggle: () => {
+      console.log('modal has been toggled');
+  }
+};
+
+
+
+/*
+* $targetEl: required
+* options: optional
+*/
+const modal = new Modal($targetEl, options);
