@@ -167,3 +167,11 @@ p {
     opacity: 0;
   }
   
+
+
+
+   span {
+    display: block;
+    transform: translateX(-100px);
+    opacity: 0;
+  }
