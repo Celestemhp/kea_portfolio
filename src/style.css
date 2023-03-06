@@ -7,6 +7,13 @@
     font-family: monospace, system-ui, sans-serif;
   }
 }
+/* remove the below if you don't want smooth scrolling */
+html,
+body {
+  scroll-behavior: smooth;
+  
+}
+
 img {
   width: 100%;
 }
@@ -153,25 +160,97 @@ p {
     }
   }
 
-  section span {
-    display: block;
-    transform: translateX(-100px);
-    opacity: 0;
-  }
+  
 
 
-
-  section span {
-    display: block;
-    transform: translateX(-100px);
-    opacity: 0;
+  .top {
+    --offset: 50px; 
+    
+    position: sticky;
+    bottom: 20px;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    /* visual styling */
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: rgb(180, 180, 255);
+    border-radius: 100px;
+    white-space: nowrap;
   }
   
 
 
+  /* -------------------------------- 
 
-   span {
-    display: block;
-    transform: translateX(-100px);
-    opacity: 0;
-  }
+File#: _1_cursor-movement-effects
+Title: Cursor Movement Effects
+Descr: Animate elements on mouse move
+Usage: codyhouse.co/license
+
+-------------------------------- */
+.cursor-fx-target {
+  position: relative;
+  background-color: var(--color-bg-darker);
+  width: 280px;
+  height: 280px;
+  border-radius: var(--radius-lg);
+}
+.cursor-fx-target:hover .cursor-fx-object {
+  transition: transform 0.5s var(--ease-out);
+}
+
+.cursor-fx-object {
+  position: absolute;
+  transition: transform 0.3s var(--ease-out-back);
+}
+
+.cursor-fx-object--1 {
+  background-color: var(--color-bg-light);
+  border-radius: var(--radius-md);
+  height: 100px;
+  width: 100px;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+}
+
+.cursor-fx-object--2 {
+  background-color: var(--color-primary);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+}
+
+
+
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--red);
+  bottom: 50px;
+  transform: scaleX(0);
+}
+
+.scroll2 ul {
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.scroll2 li { 
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}

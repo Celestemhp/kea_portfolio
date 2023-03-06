@@ -93,3 +93,37 @@ inView("section", ({ target }) => {
     { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
   );
 });
+
+
+// 
+// scroll effect
+import { animate, scroll } from "motion";
+
+const items = document.querySelectorAll("scroll2");
+
+// Animate gallery horizontally during vertical scroll
+scroll2(
+  animate("ul_scroll2", {
+    transform: ["none", `translateX(-${items.length - 1}00vw)`]
+  }),
+  { target: document.querySelector("scroll2") }
+);
+
+// Progress bar representing gallery scroll
+scroll2(animate(".progress", { scaleX: [0, 1] }), {
+  target: document.querySelector("scroll2")
+});
+
+// Image title parallax
+const segmentLength = 1 / items.length;
+items.forEach((item, i) => {
+  const header = item.querySelector("h2");
+
+  scroll2(animate(header, { x: [200, -200] }), {
+    target: document.querySelector("scroll2"),
+    offset: [
+      [i * segmentLength, 1],
+      [(i + 1) * segmentLength, 0]
+    ]
+  });
+});

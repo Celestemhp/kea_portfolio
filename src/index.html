@@ -166,32 +166,194 @@
         </div>
         <p class="text-grey-20 mt-5 text-xs">@celestemichelle2023</p>
       </footer>
+        
+<!-- Previous Button -->
+<a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+  Previous
+</a>
+
+<!-- Next Button -->
+<a href="#" class="inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+  Next
+</a>
+
     </main>
-    <a class="back-to-top" href="#">
-      <i class="lni-chevron-up">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3.75 7.25l4.5-4.5l4.5 4.5m-4.5 6V2.75" /></svg>
-      </i>
+
+    <a href="#" class="top" class="back-to-top">       
+       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3.75 7.25l4.5-4.5l4.5 4.5m-4.5 6V2.75" />
+      </svg>
     </a>
 
+
+
+
+    <p class="margin-bottom-sm text-sm">Move the mouse over the box ↓</p>
+
+    <div class="cursor-fx-target js-cursor-fx-target">
+      <div class="position-absolute inset-0">
+        <div class="cursor-fx-object cursor-fx-object--1 js-cursor-fx-object--1"></div>
     
-    <section><span>"I love to explore and constantly learn new things, <br />
-      that´s what drives me everyday!"
-      <span></section>
+        <div class="cursor-fx-object cursor-fx-object--2 js-cursor-fx-object--2"></div>
+      </div>
+    </div>
 
-      <section><span>"I love to explore and constantly learn new things, <br />
-        that´s what drives me everyday!"
-        <span></section>
 
-      <section><span>trigger<span></section>
-      <section><span>animations!<span></section>
+
+
+    <div
+    id="carouselExampleCaptions"
+    class="relative"
+    data-te-carousel-init
+    data-te-carousel-slide>
+    <div
+      class="absolute right-0 bottom-0 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0">
+      <button
+        type="button"
+        data-te-target="#carouselExampleCaptions"
+        data-te-slide-to="0"
+        data-te-carousel-active
+        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+        aria-current="true"
+        aria-label="Slide 1"></button>
+      <button
+        type="button"
+        data-te-target="#carouselExampleCaptions"
+        data-te-slide-to="1"
+        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+        aria-label="Slide 2"></button>
+      <button
+        type="button"
+        data-te-target="#carouselExampleCaptions"
+        data-te-slide-to="2"
+        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+        aria-label="Slide 3"></button>
+    </div>
+    <div
+      class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+      <div
+        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-active
+        data-te-carousel-item
+        style="backface-visibility: hidden">
+        <div
+          class="relative overflow-hidden bg-cover bg-no-repeat"
+          style="background-position: 50%">
+          <img
+            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(123).jpg"
+            class="block w-full" />
+          <div
+            class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-50"></div>
+        </div>
+        <div
+          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+          <h5 class="text-xl">First slide label</h5>
+          <p>
+            Some representative placeholder content for the first slide.
+          </p>
+        </div>
+      </div>
+      <div
+        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item
+        style="backface-visibility: hidden">
+        <div
+          class="relative overflow-hidden bg-cover bg-no-repeat"
+          style="background-position: 50%">
+          <img
+            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(124).jpg"
+            class="block w-full" />
+          <div
+            class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-50"></div>
+        </div>
+        <div
+          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+          <h5 class="text-xl">Second slide label</h5>
+          <p>
+            Some representative placeholder content for the second slide.
+          </p>
+        </div>
+      </div>
+      <div
+        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        data-te-carousel-item
+        style="backface-visibility: hidden">
+        <div
+          class="relative overflow-hidden bg-cover bg-no-repeat"
+          style="background-position: 50%">
+          <img
+            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(125).jpg"
+            class="block w-full" />
+          <div
+            class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-50"></div>
+        </div>
+        <div
+          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+          <h5 class="text-xl">Third slide label</h5>
+          <p>
+            Some representative placeholder content for the third slide.
+          </p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+      type="button"
+      data-te-target="#carouselExampleCaptions"
+      data-te-slide="prev">
+      <span class="inline-block h-8 w-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </span>
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Previous</span
+      >
+    </button>
+    <button
+      class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+      type="button"
+      data-te-target="#carouselExampleCaptions"
+      data-te-slide="next">
+      <span class="inline-block h-8 w-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </span>
+      <span
+        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+        >Next</span
+      >
+    </button>
+  </div>
+
+
+  
 
   
 
 
-
     <!-- Main modal t-shirt -->
     <div id="defaultModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden h-modal w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0 md:h-full">
-      <div class="relative h-full w-full max-w-2xl sm:m-2 md:h-auto">
+      <div class="relative h-full w-full max-w-2xl sm:m-2">
         <!-- Modal content -->
         <div class="border-stroke p-7.5 relative rounded-lg bg-slate-100 shadow dark:bg-gray-700 md:p-10">
           <!-- Modal header -->
@@ -216,6 +378,15 @@
               <img src="/img/happyshirts.webp" alt="Blog" />
             </div>
           </div>
+          
+                  <!-- Previous Button -->
+            <a href="defaultModal2" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+              Previous
+            </a>
+            <!-- Next Button -->
+            <a href="defaultModal2" class="inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+              Next
+            </a>
         </div>
       </div>
     </div>
@@ -249,9 +420,13 @@
         </div>
       </div>
     </div>
+
+
+
+
     <!-- Main modal Linda Andrews -->
     <div id="defaultModal3" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden h-modal w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0 md:h-full">
-      <div class="relative h-full w-full max-w-2xl sm:m-2 md:h-auto">
+      <div class="relative h-full w-full max-w-2xl sm:m-2 ">
         <!-- Modal content -->
         <div class="border-stroke p-7.5 relative rounded-lg bg-slate-100 shadow dark:bg-gray-700 md:p-10">
           <!-- Modal header -->
@@ -275,12 +450,42 @@
             <div class="wc qf pn cb flex max-w-xs">
               <img src="/img/linda_wireframe.webp" alt="Blog" />
             </div>
+            <section class="scroll2">
+              <ul class="ul_scroll2">
+                <li class="max-w-xs">
+                  <img src="/img/linda_wireframe.webp" />
+                  <h2>#001</h2>
+                </li>
+                <li class="max-w-xs">
+                  <img src="/img/linda_wireframe.webp" />
+                  <h2>#002</h2>
+                </li>
+                <li class="max-w-xs">
+                  <img src="/img/linda_wireframe.webp" />
+                  <h2>#003</h2>
+                </li>
+                <li class="max-w-xs">
+                  <img src="/img/plakat footbag2.webp" />
+                  <h2>#004</h2>
+                </li>
+                <li class="max-w-xs">
+                  <img src="/img/plakat footbag2.webp" />
+                  <h2>#005</h2>
+                </li>
+              </ul>
+            </section>
           </div>
         </div>
       </div>
     </div>
+
+
+
+
+
     <script type="module" src="./main.js"></script>
     <script src="animation.js"></script>
+    <script src="scroll_effect.js"></script> <!-- Modernizr -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
   </body>
 </html>
